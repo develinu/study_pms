@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;500;700&display=swap');
+body { padding: 0; margin: 0; background: #eeeeee; }
+* { font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; }
+p { margin: 0; }
+
+
+
+
+.app {
+  padding: 10px;
+}
+.reservation {
+  padding: 10px;
+  background: white;
+  display: flex;
+}
+.reservation .select_room {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  outline: none;
+}
+.reservation input[type="text"] {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  outline: none;
+}
+.reservation button {
+  width: 100px;
+  height: 40px;
+  background: #007BFF;
+  border: 1px solid #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.reservation button:hover {
+  background: #0071ea;
+}
+.reservation label {
+  align-self: center;
+  padding: 0 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.reservation label input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+
+.rooms {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  margin-left: -10px; 
+  padding: 10px 0 0;
+}
+.rooms:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.room {
+  width: calc( 100% / 7 );
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.room.checkin .box {
+  border-color: #007BFF;
+}
+.room.checkin .name {
+  color: #007BFF;
+}
+.room.checkout .box {
+  border-color: #FFC107 !important;
+}
+.room.checkout .name {
+  color: #FFC107 !important;
+}
+.box {
+  border: 3px solid transparent;
+  background: white;
+  padding: 10px;
+}
+.head {
+  text-align: right;
+}
+.head p {
+  font-weight: bold;
+  float: left;
+  font-size: 18px;
+}
+.head input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.head .cancel {
+  width: 40px;
+  height: 20px;
+  border: 1px solid #333;
+  color: white;
+  background: #333;
+  font-size: 13px;
+  margin: -12px 3px 0 0;
+  vertical-align: middle;
+  border-radius: 2px;
+  padding: 0;
+  cursor: pointer;
+}
+.head .cancel:hover {
+  background: black;
+}
+.name {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
