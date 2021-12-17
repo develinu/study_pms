@@ -52,6 +52,10 @@ p { margin: 0; }
   height: 20px;
   vertical-align: middle;
 }
+.select_room_helper p {
+  font-size: 13px;
+  color: #df4759;
+}
 
 
 .rooms {
@@ -125,4 +129,28 @@ p { margin: 0; }
   align-items: center;
   font-size: 30px;
   font-weight: bold;
+}
+.deleteForm {
+  display: flex;
+  flex-direction: column;
+}
+.deleteForm span {
+  align-self: center;
+}
+.deleteForm .btn {
+  margin-top: 10px;
+  align-self: center;
+}
+.deleteForm .btn button {
+  margin: 5px;
+}
+.deleteForm .btn .btn-delete {
+  color: white;
+  background-color: #d60c23;
+}
+.ReactModal__Content {
+  width: 500px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 200px;
 }
